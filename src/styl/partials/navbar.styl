@@ -1,16 +1,50 @@
 .site-navbar
-  background white
   display flex
   align-items center
-  height 78px // Change
+  height 94px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
+  padding 0 150px 0 70px
+  transition 0.3s background ease
 
   & + main
-    padding-top 78px // Change
+    padding-top 0 // Change
+    
+.alianza-navbar-logo
+  height auto
+  width 111px
+    
+.navbar-strong-blue
+  background-color #142d3f
+  
+.navbar-blue
+  background-color #106198
+    
+.nav-transparent-bg
+  background transparent
+
+.nav-white-bg
+  background #fefefe
+  box-shadow 0 2px 9px 0 rgba(0, 0, 0, 0.14)
+  .site-navbar__menu-link
+    color #235ca9
+    &.active
+      .nav_stroke
+        background-color #235ca9
+      &:hover
+        .nav_stroke
+          background-color #235ca9
+    &:hover
+      .nav_stroke
+        height 100%
+        background-color #235ca9
+  .nav_stroke-container
+    height 1px
+  .nav_stroke
+    background #d4dddd
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -21,7 +55,7 @@
 
 .site-navbar__desktop-logo-container
   img
-    width remify(150) // Change
+    width 111px // Change
 
 .site-navbar__menu-container
   flex-grow 1
@@ -34,12 +68,40 @@
   align-items center
   justify-content flex-end
 
-.site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+.nav_stroke-container
+  height 2px
+  width 100%
+  center-block()
+  margin-bottom 15px
+  transition 0.3s height ease
 
+.nav_stroke
+  height 50%
+  width 100%
+  background-color $rerblue-one
+  transition 100ms height, color ease
+  
+
+.site-navbar__menu-link
+  color #fff // Change
+  font-size remify(12) // Change
+  text-transform uppercase
+  letter-spacing 1.4px
+  cursor pointer
+  margin-right 30px
+
+  &.active
+    font-family 'SourceSansPro'
+    font-weight 700
+    
   &:hover, &.active
-    color white // Change
+    .nav_stroke
+      height 100%
+      background-color #ffcc00
+      center-block()
+
+.site-navbar__menu-link:last-child
+  margin-right 0
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
@@ -93,3 +155,126 @@
     display block
     text-align left
     flex-basis 100%
+    
+  .navbar-hamburguer-visibilit
+    display none
+    
+@media screen and (max-width 876px)
+  .site-navbar__desktop-logo-container
+    .navbar-logo-mobile
+      height auto
+      width 100px
+      
+  .navbar-hamburguer-visibilit
+    display block
+      
+  .navbar-hamburguer
+    width 33px
+    height 33px
+    border-radius 50%
+    background-color #235ba8
+    cursor pointer
+    display flex
+    justify-content center
+    
+  .align-content-hamburguer
+    display flex
+    flex-direction column
+    justify-content center
+    
+  .line-hamburguer-base
+    height 1px
+    background-color #fff
+
+  .line-hamburguer-lg
+    width: 15px
+    
+  .line-hamburguer-md
+    width 7.5px
+    
+  .margin-vertical-4px
+    margin 4px 0px
+    
+/*HAMBURGER*/
+
+.hamburger-menu-container
+  display none
+
+@media screen and (max-width 876px)
+  .hamburger-menu-container
+    background-color #235ba8
+    display inline
+    left 0
+    padding-bottom 50px
+    position fixed
+    top 0
+    width 0%
+    z-index 13
+    bottom 0
+    overflow scroll
+    -webkit-transition width 0.5s
+    transition width 0.5s
+    
+  .hamburger-menu-header
+    align-items center
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 22px 36px 50px 36px
+    
+  .hamburger-logo
+    height 33px
+    width 102px
+    
+  .hamburger-close-container
+    cursor pointer
+    
+  .hamburger-close
+    height 16px
+    width 16px
+    
+  .hamburger-link-container
+    align-items center
+    display flex
+    flex-direction row
+    margin-bottom 30px
+    
+  .hamburger-stroke-container
+    height 1px
+    width 23px
+    margin-right 15px
+    transition 0.3s height ease
+
+  .hamburger-stroke
+    height 1px
+    width 50%
+    background-color #235ba8
+    transition 300ms width, color ease
+
+  .hamburger-menu-link
+    color #fff
+    cursor pointer
+    font-size remify(12)
+    letter-spacing 1.4px
+    text-transform uppercase
+
+    &.link-active
+      font-family 'OpenSans'
+      font-weight 800
+      
+    &:hover, &.link-active
+      .hamburger-stroke
+        width 100%
+        background-color #fff
+        
+  .hamburger-text
+    padding 10px 0
+        
+@media screen and (max-width 1117px)
+  .site-navbar__menu-link
+    font-size remify(11px)
+    
+  .site-navbar__desktop-logo-container
+    img
+      width 8rem
+  
