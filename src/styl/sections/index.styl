@@ -18,15 +18,22 @@
   max-width 430px
   text-align center
 
-.buton-green
+.button-green
   background-color #89cb44
   border none
   border-radius 100px
   color #fff
+  cursor pointer
   font-size remify(13px)
   letter-spacing 0.5px
   padding 10px 22px
-  
+
+  &:hover
+    background rgba(0,0,0,0)
+    color #89cb44
+    box-shadow inset 0 0 0 3px #89cb44
+    transition box-shadow 0.2s
+
 .homepage-second-cover
   align-items center
   background url("../img/backgrounds/background-yellow.jpg")
@@ -35,7 +42,7 @@
   background-size cover
   height 592px
   position relative
-  
+
 .second-cover-card-layer
   background-color #fff
   border-radius 2px
@@ -46,20 +53,20 @@
   right 0
   top -120px
   width 935px
-  
+
 .card-view-more-container
   display flex
   flex-wrap wrap
   justify-content center
   padding 45px
-  
+
 .card-view-more
   box-shadow 0 2px 14px 0 rgba(0, 0, 0, 0.25)
   height 185px
   margin 44px 30px
   position relative
   width 220px
-  
+
 .card-view-more-icon
   left 0
   height 108px
@@ -72,14 +79,14 @@
 .card-view-more-icon-img
   height 108px
   width 108px
-  
+
 .card-view-more-banner
   background url("../img/backgrounds/card-banner.png")
   background-position center
   background-repeat no-repeat
   background-size cover
   height 63px
-  
+
 .card-view-more-info-content
   align-items center
   display flex
@@ -87,7 +94,7 @@
   height 121px
   justify-content flex-end
   padding-bottom 20px
-  
+
 .card-view-more-title
   color #353436
   font-size remify(21px)
@@ -98,15 +105,22 @@
   font-size remify(16px)
   line-height 21px
   max-width 128px
-  
+
 .card-view-more-button
   background-color #fff
   border solid 1px #1a6aae
   border-radius 100px
   color #1a6aae
+  cursor pointer
   font-size remify(13px)
   padding 6px 22px
-  
+
+  &:hover
+    background rgba(26, 106, 174, 1)
+    box-shadow inset 0 0 0 0
+    color #fff
+    transition background 0.2s
+
 .homepage-third-cover
   background url("../img/backgrounds/smart-city.jpg")
   background-position center
@@ -114,7 +128,7 @@
   background-size cover
   height 336px
   margin-bottom 315px
-  
+
 .homepage-third-cover-content
   padding-top 55px
 
@@ -123,19 +137,19 @@
   font-size remify(38px)
   text-align center
   margin 0
-  
+
 .smarty-city-card-container
   display flex
   flex-wrap wrap
   justify-content center
   margin-top 80px
-  
+
 .smarty-city-card
   background-color #fff
   box-shadow 0 2px 13px 0 rgba(0, 0, 0, 0.29)
   margin 0 18px
   width 256px
-  
+
 .smart-city-banner
   align-items center
   background-color #edeced
@@ -143,20 +157,20 @@
   height 142px
   justify-content center
   width 256px
-  
+
 .smart-city-banner-img
   &-bus
     height auto
     width 200px
-    
+
   &-chair
     height auto
     width 140px
-    
+
   &-sustainable
     height auto
     width 210px
-    
+
   &-pedestrian
     height auto
     width 220px
@@ -174,6 +188,7 @@
   font-size remify(15px)
   letter-spacing 1px
   line-height 21px
+  max-width 180px
   text-align center
   text-transform uppercase
 
@@ -189,4 +204,3 @@
   line-height 22px
   margin 0 0 30px 0
   text-align center
-  
