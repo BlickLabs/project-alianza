@@ -1,6 +1,6 @@
 .homepage-cover
   align-items center
-  background url("../img/backgrounds/homepage-cover.jpg")
+  background url("../img/backgrounds/homepage-alianza-cover.jpg")
   background-position center
   background-repeat no-repeat
   background-size cover
@@ -40,7 +40,7 @@
   background-position center
   background-repeat no-repeat
   background-size cover
-  height 592px
+  height 662px
   position relative
 
 .second-cover-card-layer
@@ -51,7 +51,7 @@
   margin 0 auto
   position absolute
   right 0
-  top -120px
+  top -50px
   width 935px
 
 .card-view-more-container
@@ -62,7 +62,7 @@
 
 .card-view-more
   box-shadow 0 2px 14px 0 rgba(0, 0, 0, 0.25)
-  height 185px
+  height auto
   margin 44px 30px
   position relative
   width 220px
@@ -91,20 +91,30 @@
   align-items center
   display flex
   flex-direction column
-  height 121px
+  height auto
   justify-content flex-end
   padding-bottom 20px
+  padding-top 15px
+  
+.card-view-more-title-container
+  align-items center
+  display flex
+  height 42px
+  margin 0 0 20px 0
 
 .card-view-more-title
   color #353436
   font-size remify(21px)
-  margin 0 0 20px 0
+  margin 0
   text-align center
-
-.view-more-little-size-title
+  
+.view-more-energy-title
   font-size remify(16px)
   line-height 21px
-  max-width 128px
+  max-width 135px
+  
+.view-more-lighting-title
+  font-size remify(17px)
 
 .card-view-more-button
   background-color #fff
@@ -179,9 +189,13 @@
   align-items center
   display flex
   flex-direction column
-  height 252px
+  height 185px
   justify-content flex-end
-  padding-bottom 26px
+
+.smart-city-card-title-container
+  align-items center
+  display flex
+  height 42px
 
 .smart-city-card-title
   color #353436
@@ -189,6 +203,7 @@
   letter-spacing 1px
   line-height 21px
   max-width 180px
+  margin 0
   text-align center
   text-transform uppercase
 
@@ -204,3 +219,34 @@
   line-height 22px
   margin 0 0 30px 0
   text-align center
+  padding 0 20px
+
+
+@media screen and (max-width 876px)
+  .second-cover-card-layer
+    width 100%
+    
+  .card-view-more-container
+    padding 45px 0
+    
+  .homepage-second-cover
+    height 1500px
+    
+  .homepage-third-cover
+    height 1900px
+    margin-bottom 70px
+    
+  .smarty-city-card
+    margin 0 18px 28px 18px
+    
+  .footer-separator
+    width 80%
+    
+  .footer-links-container
+    flex-direction column
+    
+  .footer-link-separator
+    display none
+    
+  .footer-link-text
+    line-height 20px
