@@ -1,7 +1,7 @@
 .site-navbar
   display flex
   align-items center
-  height 94px // Change
+  height 88px // Change
   left 0
   position fixed
   top 0
@@ -27,24 +27,24 @@
   background transparent
 
 .nav-white-bg
-  background #fefefe
+  background rgba(65, 88, 119, 0.9)
   box-shadow 0 2px 9px 0 rgba(0, 0, 0, 0.14)
   .site-navbar__menu-link
-    color #235ca9
+    color #fff
     &.active
       .nav_stroke
-        background-color #235ca9
+        background-color #fc0
       &:hover
         .nav_stroke
-          background-color #235ca9
+          background-color #fff
     &:hover
       .nav_stroke
         height 100%
-        background-color #235ca9
+        background-color #fc0
   .nav_stroke-container
-    height 1px
+    height 3px
   .nav_stroke
-    background #d4dddd
+    background transparent
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -111,7 +111,7 @@
 
   .site-navbar__desktop-logo-container
     img
-      height remify(20) // Change
+      height 40px // Change
       width auto
 
   .site-navbar__mobile-logo-container
@@ -223,8 +223,8 @@
     padding 22px 36px 50px 36px
     
   .hamburger-logo
-    height 33px
-    width 102px
+    height 40px
+    width auto
     
   .hamburger-close-container
     cursor pointer
@@ -274,7 +274,4 @@
   .site-navbar__menu-link
     font-size remify(11px)
     
-  .site-navbar__desktop-logo-container
-    img
-      width 8rem
   
