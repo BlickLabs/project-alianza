@@ -107,12 +107,12 @@
   font-size remify(21px)
   margin 0
   text-align center
-  
+
 .view-more-energy-title
   font-size remify(16px)
   line-height 21px
   max-width 135px
-  
+
 .view-more-lighting-title
   font-size remify(17px)
 
@@ -133,6 +133,10 @@
 
 .homepage-informative-section
   align-items center
+  background url('../img/backgrounds/informative-section.jpg')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
   display flex
   height 400px
 
@@ -154,11 +158,11 @@
   background-repeat no-repeat
   background-size cover
   height 500px
-  margin-bottom 315px
+  margin-bottom 160px
 
 .homepage-third-cover-content
   padding-top 55px
-  
+
 .homepage-smart-city-title-container
   margin 0 auto
   max-width 650px
@@ -181,41 +185,45 @@
   margin 0 18px
   width 256px
 
-.smarty-city-card:hover
-  .smarty-city-preview-description
-    display none
+.smarty-city-card
+  position relative
+
+  &:hover
+    .smarty-city-full-description
+      opacity 1
+
+    .smart-city-description
+      color #fff
+
+    .smart-city-card-hover-title
+      color #fff
+
+    .smart-city-card-title-modifier
+      max-width none
 
 .smarty-city-full-description
-  display none
-    
-.smarty-city-card:hover
-  .smarty-city-full-description
-    display block
-    
-.smarty-city-card:hover
-  .smarty-city-card-content
-    background-color #065181
-  .card-content
-    &-1
-      height auto
-      padding-bottom 20px
-    &-2
-      height auto
-      padding-bottom 20px
-    &-3
-      height auto
-      padding-bottom 20px
-    &-4
-      height auto
-      padding-bottom 20px
+  align-items center
+  background-color rgba(6, 81, 129, 0.9)
+  bottom 0
+  display flex
+  flex-direction column
+  left 0
+  height 400px
+  justify-content center
+  opacity 0
+  padding 0 20px
+  position absolute
+  right 0
+  top 0
+  transform translate(-22px, -19px)
+  transition 300ms opacity ease
+  width 300px
 
-.smarty-city-card:hover
-  .smart-city-description
-    color $white
-
-.smarty-city-card:hover
-  .smart-city-card-title
-    color $white 
+.smart-city-white-separator
+  background-color #fff
+  height 1px
+  margin 20px 0
+  width 85%
 
 .smart-city-banner
   align-items center
@@ -282,28 +290,28 @@
 @media screen and (max-width 876px)
   .second-cover-card-layer
     width 100%
-    
+
   .card-view-more-container
     padding 45px 0
-    
+
   .homepage-second-cover
     height 1500px
-    
+
   .homepage-third-cover
     height 1900px
     margin-bottom 70px
-    
+
   .smarty-city-card
     margin 0 18px 28px 18px
-    
+
   .footer-separator
     width 80%
-    
+
   .footer-links-container
     flex-direction column
-    
+
   .footer-link-separator
     display none
-    
+
   .footer-link-text
     line-height 20px
