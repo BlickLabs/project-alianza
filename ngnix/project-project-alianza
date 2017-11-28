@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /home/static/project-alianza;
+  index index.html index.htm;
+
+  server_name www.alianza-swemex.com www.alianza-swemex.com www.alianza-swemex.com.mx .alianza-swemex.com alianza-swemex.com.mx;
+
+  location / {
+      try_files $uri $uri/ =404;
+  }
+}
