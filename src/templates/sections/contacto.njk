@@ -1,0 +1,228 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="contact-wrapper">
+    <div class="contact-first-section">
+      <div class="contact-cover">
+        <div class="contact-cover-text-container">
+          <h1 class="contact-title alianza-font-SourceSansPro-semi-bold no-margin-text">Contacto</h1>
+          <div class="contact-description-container">
+            <h2 class="contact-description alianza-font-SourceSansPro-regular no-margin-text">Deja tus datos y te contactaremos</h2>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <div class="contact-form-container">
+            <div class="contact-form-container-top-section">
+              <div>
+                <h3 class="contact-form-container-text alianza-font-SourceSansPro-semi-bold no-margin-text">Envíanos tu mensaje</h3>
+              </div>
+              <div class="contact-icon-envelopes-container">
+                <img class="contact-icon-envelopes" src="img/contact/contact-icon-envelopes.png">
+              </div>
+            </div>
+            <form name="alianza-contact-form">
+              <div class="group">
+                <input class="contact-form-input-base" type="text" name="alianzacontactname" required>
+                <span class="bar"></span>
+                <label class="contact-form-label alianza-font-SourceSansPro-regular">Nombre</label>
+              </div>
+              <div class="group">
+                <input class="contact-form-input-base"  type="text" name="alianzacontactphone" required>
+                <span class="bar"></span>
+                <label class="contact-form-label alianza-font-SourceSansPro-regular">Teléfono</label>
+              </div>
+              <div class="group">
+                <input class="contact-form-input-base"  type="text" name="alianzacontactemail" required>
+                <span class="bar"></span>
+                <label class="contact-form-label alianza-font-SourceSansPro-regular">Correo electrónico</label>
+              </div>
+              <div class="group">
+                <input class="contact-form-input-base"  type="text" name="alianzacontactmessage" required>
+                <span class="bar"></span>
+                <label class="contact-form-label alianza-font-SourceSansPro-regular">Mensaje</label>
+              </div>
+              <div class="group">
+                <select class="contact-form-input-base contact-form-select" name="alianzacontactcompany" required>
+                  <option disabled selected>Selecciona</option>
+                  <option class="alianza-font-SourceSansPro-regular">Empresa</option>
+                </select>
+                <span class="bar"></span>
+              </div>
+              <div class="contact-form-submit-container">
+                <input class="contact-form-submit alianza-font-SourceSansPro-regular" type="submit" value="Enviar" name="">
+              </div>
+            </form>
+          </div>
+          <div class="contact-form-img-container">
+            <img class="contact-form-img" src="img/contact/contact-form-img.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-separator"></div>
+
+    <div class="contact-second-section">
+      <div class="contact-second-section-large-card">
+        <div class="contact-business-logo-container">
+          <img class="contact-business-logo" src="img/about-us/business-swe-logo.png">
+        </div>
+        <div class="contact-large-card-separator-container">
+          <div class="contact-large-card-separator-container"></div>
+        </div>
+        <div>
+          <div>
+            <h3 class="contact-large-card-title alianza-font-SourceSansPro-semi-bold no-margin-text">Bussines Sweden</h3>
+          </div>
+          <div class="contact-social-network-flex-row">
+            <div class="contact-social-network-container social-nextwork-container-margin-right">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-twitter.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">|businessswedenmexico</p>
+            </div>
+            <div class="contact-social-network-container">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-in.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">BussinessSweMex</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-companies-wrapper">
+        <div class="contact-companies-container">
+          <div class="contact-companies-logo-container">
+            <img class="contact-companies-logo-1" src="img/about-us/abb-logo.png">
+          </div>
+          <div class="contact-companies-card-container">
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-twitter.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @ABBMexico
+              </p>
+            </div>
+            <div class="contact-social-network-container">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-facebook.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @ABBenMexico
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-companies-container">
+          <div class="contact-companies-logo-container">
+            <img class="contact-companies-logo-2" src="img/about-us/axis-logo.png">
+          </div>
+          <div class="contact-companies-card-container contact-companies-card-container-variant">
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-youtube.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @AxisCommunications
+              </p>
+            </div>
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-twitter.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @axispvideo
+              </p>
+            </div>
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-facebook.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @AxisCommunications
+              </p>
+            </div>
+            <div class="contact-social-network-container">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-in.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                Axis Communications
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-companies-container">
+          <div class="contact-companies-logo-container">
+            <img class="contact-companies-logo-3" src="img/about-us/ericsson-logo.png">
+          </div>
+          <div class="contact-companies-card-container">
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-instagram.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @inside_ericsson
+              </p>
+            </div>
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-twitter.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @ericsson
+              </p>
+            </div>
+            <div class="contact-social-network-container">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-facebook.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @ericsson
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-companies-container">
+          <div class="contact-companies-logo-container">
+            <img class="contact-companies-logo-4" src="img/about-us/volvo-logo.png">
+          </div>
+          <div class="contact-companies-card-container">
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-instagram.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @VolvoBusesMexico
+              </p>
+            </div>
+            <div class="contact-social-network-container social-nextwork-container-margin-bottom">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-twitter.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @volvobusesmex
+              </p>
+            </div>
+            <div class="contact-social-network-container">
+              <div class="contact-social-network-icon-container">
+                <img class="contact-social-network-icon" src="img/contact/contact-icon-facebook.png">
+              </div>
+              <p class="contact-social-network-title alianza-font-SourceSansPro-regular no-margin-text">
+                @volvo_buses_mexico
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

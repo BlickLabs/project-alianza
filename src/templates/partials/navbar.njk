@@ -1,4 +1,4 @@
-<nav class="site-navbar {% if section == 'soluciones' %} site-navbar-blue {% endif %} {% if section == 'acerca-de-nosotros' %} site-navbar-blue {% endif %} {% if section == 'movilidad-urbana' %} site-navbar-blue {% endif %} {% if section == 'energia-sustentable' %} site-navbar-blue {% endif %} {% if section == 'ciudades-seguras' %} site-navbar-blue {% endif %}">
+<nav class="site-navbar {% if section == 'soluciones' %} site-navbar-blue {% endif %} {% if section == 'acerca-de-nosotros' %} site-navbar-blue {% endif %} {% if section == 'movilidad-urbana' %} site-navbar-blue {% endif %} {% if section == 'energia-sustentable' %} site-navbar-blue {% endif %} {% if section == 'ciudades-seguras' %} site-navbar-blue {% endif %} {% if section == 'contacto' %} site-navbar-blue {% endif %}">
   <div class="site-navbar__desktop-logo-container">
     <a href="index.html">
       <img class="alianza-navbar-logo" src="img/logos/alianza-logo-white.png" alt="Logo Alianza SWE-MEX">
@@ -33,11 +33,11 @@
         </div>
         <span class="alianza-font-SourceSansPro-semi-bold">Noticias</span>
       </a>
-      <a href="" class="site-navbar__menu-link {% if section == 'contact' %}active{% endif %}">
+      <a href="contacto.html" class="site-navbar__menu-link {% if section == 'contacto' %}active{% endif %}">
         <div class="nav_stroke-container">
           <div class="nav_stroke"></div>
         </div>
-        <span class="alianza-font-SourceSansPro-semi-bold">Contacto</span>
+        <span class="alianza-font-SourceSansPro-semi-bold {% if section == 'contacto' %} link-option-active {% endif %}">Contacto</span>
       </a>
     </div>
   </div>
