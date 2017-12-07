@@ -292,20 +292,79 @@
   margin 0
   text-align center
   padding 0 20px
-
+  
+.card-view-more-carousel-container,
+.smart-city-card-carousel-container
+  display none
 
 @media screen and (max-width 876px)
+  .homepage-cover
+    height 500px
+
+  .homepage-cover-title
+    font-size remify(40px)
+    line-height 40px
+
+  .card-view-more-container
+    display none
+
+  .card-view-more-carousel-container
+    align-items center
+    background-color #fff
+    display flex
+    left 0
+    height 330px
+    margin 0 25px
+    position absolute
+    right 0
+
+  .card-view-more
+    margin-bottom 20px
+
+  .homepage-informative-section
+    display initial
+
+  .informative-section-img-container
+    display none
+
+  .informative-section-background-img
+    background url("../img/homepage/informative-section-image.jpg")
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    height 160px
+    width 100%
+
+  .informative-section-text
+    font-size remify(17px)
+    line-height 25px
+
+  .smarty-city-card-container
+    display none
+
+  .homepage-smart-city-title-container
+    padding 0 30px 50px 30px
+
+  .homepage-smart-city-title
+    font-size remify(35px)
+
+  .informative-section-text-wrapper
+    padding 30px
+
   .second-cover-card-layer
     width 100%
+
+  .smart-city-card-carousel-container
+    display block
 
   .card-view-more-container
     padding 45px 0
 
   .homepage-second-cover
-    height 1500px
+    height 335px
 
   .homepage-third-cover
-    height 1900px
+    height 700px
     margin-bottom 70px
 
   .smarty-city-card
@@ -322,3 +381,22 @@
 
   .footer-link-text
     line-height 20px
+
+  .owl-nav
+    display flex
+    flex-direction row
+    justify-content center
+
+  .owl-prev, .owl-next
+    align-items center
+    background-color #235ba8
+    border-radius 100px
+    display flex
+    height 30px
+    justify-content center
+    margin 0 10px
+    width 30px
+
+  .owl-nav-icon
+    height 13px
+    width auto
