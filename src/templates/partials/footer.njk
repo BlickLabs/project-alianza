@@ -1,17 +1,19 @@
 <footer class="site-footer">
   <div class="footer-content">
-    <img class="footer-logo" src="img/logos/alianza-logo-white.png">
+    <a href="/index.html">
+      <img class="footer-logo" src="img/logos/alianza-logo-white.png">
+    </a>
     <div class="footer-separator"></div>
     <div class="footer-links-container">
-      <a class="footer-link-text alianza-font-SourceSansPro-bold" href="">Inicio</a>
+      <a class="footer-link-text alianza-font-SourceSansPro-regular {% if section == 'index' %} active-link {% endif %} " href="">Inicio</a>
       <div class="footer-link-separator"></div>
-      <a class="footer-link-text alianza-font-SourceSansPro-bold" href="">Soluciones</a>
+      <a class="footer-link-text alianza-font-SourceSansPro-regular {% if section == 'soluciones' %} active-link {% endif %} {% if section == 'movilidad-urbana' %} active-link {% endif %} {% if section == 'energia-sustentable' %} active-link {% endif %} {% if section == 'ciudades-seguras' %} active-link {% endif %}" href="ciudades-seguras.html">Soluciones</a>
       <div class="footer-link-separator"></div>
-      <a class="footer-link-text alianza-font-SourceSansPro-bold" href="">Acerca de nosotros</a>
+      <a class="footer-link-text alianza-font-SourceSansPro-regular {% if section == 'acerca-de-nosotros' %} active-link {% endif %}"  href="acerca-de-nosotros.html">Acerca de nosotros</a>
       <div class="footer-link-separator"></div>
-      <a class="footer-link-text alianza-font-SourceSansPro-bold" href="">Blog</a>
+      <a class="footer-link-text alianza-font-SourceSansPro-regular" href="">Noticias</a>
       <div class="footer-link-separator"></div>
-      <a class="footer-link-text alianza-font-SourceSansPro-bold" href="">Contacto</a>
+      <a class="footer-link-text alianza-font-SourceSansPro-regular {% if section == 'contacto' %} active-link {% endif %}" href="contacto.html">Contacto</a>
     </div>
     <img class="footer-logo-business" src="img/logos/business-sweden-icon.png">
     <p class="footer-copyright alianza-font-SourceSansPro-regular">© Copyright, Alianza SWE - MX</p>

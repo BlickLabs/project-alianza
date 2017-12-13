@@ -1,7 +1,7 @@
 .site-navbar
   display flex
   align-items center
-  height 94px // Change
+  height 88px // Change
   left 0
   position fixed
   top 0
@@ -9,6 +9,9 @@
   z-index 12
   padding 0 150px 0 70px
   transition 0.3s background ease
+
+.site-navbar-blue
+  background-color rgba(6, 81, 129, 0.95) !important
 
   & + main
     padding-top 0 // Change
@@ -27,24 +30,24 @@
   background transparent
 
 .nav-white-bg
-  background #fefefe
+  background rgba(65, 88, 119, 0.9)
   box-shadow 0 2px 9px 0 rgba(0, 0, 0, 0.14)
   .site-navbar__menu-link
-    color #235ca9
+    color #fff
     &.active
       .nav_stroke
-        background-color #235ca9
+        background-color #fc0
       &:hover
         .nav_stroke
-          background-color #235ca9
+          background-color #fff
     &:hover
       .nav_stroke
         height 100%
-        background-color #235ca9
+        background-color #fc0
   .nav_stroke-container
-    height 1px
+    height 3px
   .nav_stroke
-    background #d4dddd
+    background transparent
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -92,7 +95,7 @@
 
   &.active
     font-family 'SourceSansPro'
-    font-weight 700
+    font-weight 900
     
   &:hover, &.active
     .nav_stroke
@@ -102,6 +105,9 @@
 
 .site-navbar__menu-link:last-child
   margin-right 0
+  
+.link-option-active
+  font-weight 900
 
 @media screen and (max-width: 876px) // Change
   .site-navbar
@@ -111,7 +117,7 @@
 
   .site-navbar__desktop-logo-container
     img
-      height remify(20) // Change
+      height 40px // Change
       width auto
 
   .site-navbar__mobile-logo-container
@@ -223,8 +229,8 @@
     padding 22px 36px 50px 36px
     
   .hamburger-logo
-    height 33px
-    width 102px
+    height 40px
+    width auto
     
   .hamburger-close-container
     cursor pointer
@@ -254,13 +260,14 @@
   .hamburger-menu-link
     color #fff
     cursor pointer
-    font-size remify(12)
+    font-size remify(14px)
     letter-spacing 1.4px
     text-transform uppercase
 
     &.link-active
-      font-family 'OpenSans'
-      font-weight 800
+      font-family 'SourceSansPro'
+      font-size remify(15px)
+      font-weight 900 !important
       
     &:hover, &.link-active
       .hamburger-stroke
@@ -274,7 +281,4 @@
   .site-navbar__menu-link
     font-size remify(11px)
     
-  .site-navbar__desktop-logo-container
-    img
-      width 8rem
   

@@ -1,6 +1,6 @@
 .homepage-cover
   align-items center
-  background url("../img/backgrounds/homepage-cover.jpg")
+  background url("../img/backgrounds/homepage-alianza-cover.jpg")
   background-position center
   background-repeat no-repeat
   background-size cover
@@ -18,24 +18,31 @@
   max-width 430px
   text-align center
 
-.buton-green
+.button-green
   background-color #89cb44
   border none
   border-radius 100px
   color #fff
-  font-size remify(13px)
+  cursor pointer
+  font-size remify(16px)
   letter-spacing 0.5px
   padding 10px 22px
-  
+
+  &:hover
+    background rgba(0,0,0,0)
+    color #89cb44
+    box-shadow inset 0 0 0 3px #89cb44
+    transition box-shadow 0.2s
+
 .homepage-second-cover
   align-items center
   background url("../img/backgrounds/background-yellow.jpg")
   background-position center
   background-repeat no-repeat
   background-size cover
-  height 592px
+  height 662px
   position relative
-  
+
 .second-cover-card-layer
   background-color #fff
   border-radius 2px
@@ -44,22 +51,22 @@
   margin 0 auto
   position absolute
   right 0
-  top -120px
+  top -50px
   width 935px
-  
+
 .card-view-more-container
   display flex
   flex-wrap wrap
   justify-content center
   padding 45px
-  
+
 .card-view-more
   box-shadow 0 2px 14px 0 rgba(0, 0, 0, 0.25)
-  height 185px
+  height auto
   margin 44px 30px
   position relative
   width 220px
-  
+
 .card-view-more-icon
   left 0
   height 108px
@@ -72,70 +79,159 @@
 .card-view-more-icon-img
   height 108px
   width 108px
-  
+
 .card-view-more-banner
   background url("../img/backgrounds/card-banner.png")
   background-position center
   background-repeat no-repeat
   background-size cover
   height 63px
-  
+
 .card-view-more-info-content
   align-items center
   display flex
   flex-direction column
-  height 121px
+  height auto
   justify-content flex-end
   padding-bottom 20px
+  padding-top 15px
   
+.card-view-more-title-container
+  align-items center
+  display flex
+  height 42px
+  margin 0 0 20px 0
+
 .card-view-more-title
   color #353436
   font-size remify(21px)
-  margin 0 0 20px 0
+  margin 0
   text-align center
 
-.view-more-little-size-title
+.view-more-energy-title
   font-size remify(16px)
   line-height 21px
-  max-width 128px
-  
+  max-width 135px
+
+.view-more-lighting-title
+  font-size remify(17px)
+
 .card-view-more-button
   background-color #fff
   border solid 1px #1a6aae
   border-radius 100px
   color #1a6aae
-  font-size remify(13px)
+  cursor pointer
+  font-size remify(16px)
   padding 6px 22px
-  
+
+  &:hover
+    background rgba(26, 106, 174, 1)
+    box-shadow inset 0 0 0 0
+    color #fff
+    transition background 0.2s
+
+/*Informative section*/
+
+.homepage-informative-section
+  align-items center
+  display flex
+  height 426px
+
+.informative-section-img
+  height 426px
+  width auto
+
+.informative-section-text-wrapper
+  display flex
+  flex-direction row
+  margin 0 auto
+  padding 0 70px
+
+.text-decorator.informative-decorator-green
+  width 6px
+
+.informative-section-text
+  color #4a4a4a
+  font-size remify(19px)
+  line-height 35px
+  margin 0
+
+/*Homepage third section*/
+
 .homepage-third-cover
   background url("../img/backgrounds/smart-city.jpg")
   background-position center
   background-repeat no-repeat
   background-size cover
-  height 336px
-  margin-bottom 315px
-  
+  height 500px
+  margin-bottom 160px
+
 .homepage-third-cover-content
   padding-top 55px
+
+.homepage-smart-city-title-container
+  margin 0 auto
+  max-width 650px
 
 .homepage-smart-city-title
   color #353436
   font-size remify(38px)
   text-align center
   margin 0
-  
+
 .smarty-city-card-container
   display flex
   flex-wrap wrap
   justify-content center
   margin-top 80px
-  
+
 .smarty-city-card
   background-color #fff
   box-shadow 0 2px 13px 0 rgba(0, 0, 0, 0.29)
   margin 0 18px
   width 256px
-  
+
+.smarty-city-card
+  position relative
+
+  &:hover
+    .smarty-city-full-description
+      opacity 1
+
+    .smart-city-description
+      color #fff
+
+    .smart-city-card-hover-title
+      color #fff
+
+    .smart-city-card-title-modifier
+      max-width none
+
+.smarty-city-full-description
+  align-items center
+  background-color rgba(6, 81, 129, 0.9)
+  bottom 0
+  display flex
+  flex-direction column
+  left 0
+  height 400px
+  justify-content center
+  opacity 0
+  padding 0 20px
+  position absolute
+  right 0
+  top 0
+  transform translate(-22px, -19px)
+  transition 300ms opacity ease
+  width 300px
+
+.smart-city-white-separator
+  background-color #fff
+  height 1px
+  margin 20px 0
+  width 85%
+
 .smart-city-banner
   align-items center
   background-color #edeced
@@ -143,37 +239,43 @@
   height 142px
   justify-content center
   width 256px
-  
+
 .smart-city-banner-img
   &-bus
-    height auto
-    width 200px
-    
+    height 95px
+    width 200px !important
+
   &-chair
-    height auto
-    width 140px
-    
+    height 97px
+    width 140px !important
+
   &-sustainable
-    height auto
-    width 210px
-    
+    height 104px
+    width 210px !important
+
   &-pedestrian
-    height auto
-    width 220px
+    height 77px !important
+    width 220px !important
 
 .smarty-city-card-content
   align-items center
   display flex
   flex-direction column
-  height 252px
-  justify-content flex-end
-  padding-bottom 26px
+  height 220px
+  padding-top 20px
+
+.smart-city-card-title-container
+  align-items center
+  display flex
+  height 42px
 
 .smart-city-card-title
   color #353436
   font-size remify(15px)
   letter-spacing 1px
   line-height 21px
+  max-width 180px
+  margin 0
   text-align center
   text-transform uppercase
 
@@ -187,6 +289,117 @@
   color #2f2e2f
   font-size remify(13px)
   line-height 22px
-  margin 0 0 30px 0
+  margin 0
   text-align center
+  padding 0 20px
   
+.card-view-more-carousel-container,
+.smart-city-card-carousel-container
+  display none
+
+@media screen and (max-width 876px)
+  .homepage-cover
+    height 500px
+
+  .homepage-cover-title
+    font-size remify(40px)
+    line-height 40px
+
+  .card-view-more-container
+    display none
+
+  .card-view-more-carousel-container
+    align-items center
+    background-color #fff
+    display flex
+    left 0
+    height 330px
+    margin 0 25px
+    position absolute
+    right 0
+
+  .card-view-more
+    margin-bottom 20px
+
+  .homepage-informative-section
+    display initial
+
+  .informative-section-img-container
+    display none
+
+  .informative-section-background-img
+    background url("../img/homepage/informative-section-image.jpg")
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    height 160px
+    width 100%
+
+  .informative-section-text
+    font-size remify(17px)
+    line-height 25px
+
+  .smarty-city-card-container
+    display none
+
+  .homepage-smart-city-title-container
+    padding 0 30px 50px 30px
+
+  .homepage-smart-city-title
+    font-size remify(35px)
+
+  .informative-section-text-wrapper
+    padding 30px
+
+  .second-cover-card-layer
+    width 100%
+
+  .smart-city-card-carousel-container
+    display block
+
+  .smart-city-card-title
+    font-size remify(17px)
+
+  .card-view-more-container
+    padding 45px 0
+
+  .homepage-second-cover
+    height 335px
+
+  .homepage-third-cover
+    height 700px
+    margin-bottom 70px
+
+  .smarty-city-card
+    margin 0 18px 28px 18px
+
+  .footer-separator
+    width 80%
+
+  .footer-links-container
+    flex-direction column
+
+  .footer-link-separator
+    display none
+
+  .footer-link-text
+    line-height 20px
+
+  .owl-nav
+    display flex
+    flex-direction row
+    justify-content center
+
+  .owl-prev, .owl-next
+    align-items center
+    background-color #235ba8
+    border-radius 100px
+    display flex
+    height 30px
+    justify-content center
+    margin 0 10px
+    width 30px
+
+  .owl-nav-icon
+    height 13px
+    width auto
