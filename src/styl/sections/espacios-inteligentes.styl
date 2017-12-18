@@ -83,6 +83,9 @@
   height 800px
   position relative
 
+.smart-spaces-fourth-section-mobile
+  display none
+
 .smart-spaces-fourth-section-floating-card
   align-items center
   background-color #fff
@@ -107,6 +110,9 @@
   line-height 52px
   text-align center
 
+.smart-spaces-cards-wrapper-mobile
+  display none
+
 .smart-spaces-card-container
   box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.19)
   display flex
@@ -114,7 +120,7 @@
   height auto
   width 685px
 
-.smart-spaces-card-container:nth-child(3)
+.smart-spaces-card-container:nth-child(2)
   margin 40px 0
 
 .smart-spaces-card-bg
@@ -132,9 +138,86 @@
     background-image url("../img/smart-spaces/smart-spaces-img-4.jpg")
 
 .smart-spaces-card-description-container
-  padding 38px 48px 38px 38px
+  padding 30px
 
 .smart-spaces-card-description
   color #4a4a4a
   font-size remify(15px)
   line-height 26px
+
+@media screen and (max-width 876px)
+  .smart-spaces-cover
+    height 200px
+
+  .smart-spaces-second-section
+    flex-direction column
+
+  .smart-spaces-img-1-container
+  .smart-spaces-img-1
+    height 220px
+    width 207px
+
+  .smart-spaces-img-1-container
+    margin-left 30px
+
+  .smart-spaces-second-section-bg-img
+    height 250px
+    width 200px
+
+  .smart-spaces-second-section-content
+    padding 25px 35px
+
+  .smart-spaces-third-section
+    flex-direction column-reverse
+
+  .smart-spaces-third-section-panel
+    height 240px
+    width 200px
+
+  .smart-spaces-third-section-text-container
+    padding 25px 35px
+    
+  .smart-spaces-third-section-img-container,
+  .smart-spaces-third-section-img
+    height 190px
+    width 206px
+
+  .smart-spaces-third-section-img-container
+    left 50px
+    right initial
+
+  .smart-spaces-fourth-section
+    display none
+
+  .smart-spaces-fourth-section-mobile
+    display block
+    height auto
+    padding 0 20px
+
+  .smart-spaces-fourth-section-floating-card
+    padding 0 0 20px 0
+    position initial
+    width 100%
+
+  .smart-spaces-fourth-section-title-container
+    margin 20px 20px 30px 20px
+    width auto
+
+  .smart-spaces-fourth-section-title
+    font-size remify(30px)
+    line-height 35px
+
+  .smart-spaces-cards-wrapper
+    display none
+
+  .smart-spaces-cards-wrapper-mobile
+    display block
+
+  .smart-spaces-card-container
+    flex-direction column
+    margin 0 auto 25px auto
+    width 240px
+
+  .smart-spaces-card-bg
+    height 100px
+    width 100%
