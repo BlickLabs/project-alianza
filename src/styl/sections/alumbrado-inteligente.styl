@@ -123,3 +123,65 @@
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
   background-color #b7df8c
+
+.smart-lighting-benefits-cards-carousel
+  display none
+
+@media screen and (max-width 876px)
+  .smart-lighting-cover
+    height 250px
+
+  .smart-lighting-panel-img
+    display none
+
+  .smart-lighting-floating-card
+    flex-direction column-reverse
+    margin 0 20px
+
+  .smart-lighting-floating-card-img-container
+    display none
+
+  .smart-lighting-floating-card-info-container
+    padding 30px
+    width 100%
+
+  .smart-lighting-floating-card-background-img
+    background url("../img/smart-lighting/smart-lighting-3.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 150px
+
+  .smart-lighting-benefits-cards-carousel
+    display block
+
+  .benefits-cards-wrapper
+    display none
+
+  .smart-lighting-benefits-carousel .owl-prev,
+  .smart-lighting-benefits-carousel .owl-next
+    align-items center !important
+    background-color #235ba8  !important
+    border-radius 100px  !important
+    display flex !important
+    height 30px !important
+    justify-content center  !important
+    margin 0 10px  !important
+    width 30px  !important
+  
+  .smart-lighting-benefits-carousel .owl-nav-icon
+    height 19px
+    width auto !important
+
+  .owl-theme .owl-nav [class*="owl-"]
+    background #235ba8 !important
+
+  .benefits-card-container
+    margin 0
+    width 210px
+
+  .benefits-card-container:nth-child(1), .benefits-card-container:nth-child(3)
+    margin-right 0
+
+  .smart-lighting-benefits-carousel-container
+    margin 30px 0 20px 0
