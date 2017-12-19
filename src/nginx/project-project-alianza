@@ -5,7 +5,7 @@ server {
   root /home/static/project-alianza;
   index index.html index.htm;
 
-  server_name sandbox.alianza-swemex.getmore.mx alianzaswemex.com www.alianzaswemex.com www.sandbox.alianza-swemex.getmore.mx alianzaswemex.com.mx www.alianzaswemex.com.mx;
+  server_name sandbox.alianza-swemex.getmore.mx alianzaswemex.com www.alianzaswemex.com www.sandbox.alianza-swemex.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
