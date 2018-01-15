@@ -8,13 +8,16 @@ $('.smart-spaces-carousel').owlCarousel({
   navText: ["<img class='owl-nav-icon' src='img/icons/left-arrow.png'>", "<img class='owl-nav-icon' src='img/icons/right-arrow.png'>"],
   responsive:{
     0:{
-        items:1
+      items:1
     },
     600:{
-        items:3
+      items:1
+    },
+    800:{
+      items:3
     },
     1000:{
-        items:5
+      items:5
     }
   }
 });
