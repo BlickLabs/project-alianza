@@ -6,7 +6,8 @@ $('.smart-lighting-carousel').owlCarousel({
   dotData: true,
   center: true,
   autoWidth: false,
-  navText: ["<img class='owl-nav-icon' src='img/icons/left-arrow.png'>", "<img class='owl-nav-icon' src='img/icons/right-arrow.png'>"],
+  navText: ["<div class='smart-lighting-carousel-arrow-container'><img class='owl-nav-icon' src='img/icons/left-arrow.png'>", "<div class='smart-lighting-carousel-arrow-container'><img class='owl-nav-icon' src='img/icons/right-arrow.png'></div></div>"],
+  nav: true,
   responsive:{
     0:{
         items:1
