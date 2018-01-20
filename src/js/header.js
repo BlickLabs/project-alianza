@@ -2,6 +2,17 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 var siteNavbar = document.querySelector('.site-navbar');
+
+var homeLogo = document.querySelector('#homepageLogo');
+
+window.onload = function () {
+  if ((window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-alianza/index.html' || window.location.pathname === '/project-alianza/') && sessionStorage.getItem("first-time") === null) {
+    sessionStorage.setItem("first-time", true);
+    homeLogo.classList.add('logo-firs-load');
+    homeLogo.classList.remove('alianza-navbar-logo');
+  }
+}
+
 //navbar-fixed-top
 function doSomething(scroll_pos) {
   if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/project-alianza/index.html' || window.location.pathname === '/project-alianza/') {
