@@ -15,6 +15,7 @@
   background-size cover
   display flex
   height 365px
+  padding-right 60px
   position relative
 
 .movilidad-first-section-yellow-panel
@@ -30,7 +31,6 @@
 
 .movilidad-first-description-container
   margin-top 26px
-  max-width 506px
 
 .movilidad-sections-title
   color #353436
@@ -47,10 +47,10 @@
 .movilidad-second-section
   display flex
   flex-direction row
-  height 860px
+  height 740px
 
 .movilidad-panel-image-container
-  height 860px
+  height 740px
   width auto
 
 .movilidad-second-section-text-container
@@ -91,14 +91,14 @@
   position relative
 
 .movilidad-third-section-title-container
-  margin 86px 0 210px 0
+  margin 86px 0 182px 0
 
 .public-transport-card-container
   display flex
   flex-wrap wrap
   left 0
   margin 0 auto
-  max-width 962px
+  max-width 828px //962px
   position absolute
   right 0
   top 74px
@@ -108,35 +108,35 @@
   background-color #fff
   box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.28)
   margin 21px 23px
-  width 274px
+  width 230px //274px
 
 .public-transport-card-icon-container
   align-items center
   display flex
   justify-content center
-  height 140px
+  height 110px
 
 .public-transport-card-icon
   width auto !important
 
 .public-icon
   &-1
-    height 78px
+    height 60px //78px
 
   &-2
-    height 79px
+    height 61px //79px
 
   &-3
-    height 68px
+    height 50px //68px
 
   &-4
-    height 68px
+    height 50px //68px
 
   &-5
-    height 65px
+    height 47px //65px
 
   &-6
-    height 64px
+    height 46px //64px
 
 .public-transport-card-title-container
   align-items center
@@ -147,7 +147,7 @@
 
 .public-transport-card-text
   color #fff
-  font-size remify(24px)
+  font-size remify(22px)
   text-align center
 
 .movilidad-third-section-bottom-bg
@@ -220,17 +220,10 @@
   .movilidad-video-section
     height 200px
 
-@media screen and (min-width 877px) and (max-width 1195px)
-  .movilidad-panel-image-container
-    height auto
-    width 100%
-
-  .movilidad-second-section
-    height auto
-
+@media screen and (min-width 877px) and (max-width 1152px)
   .movilidad-section-description,
   .movilidad-second-section-info
-    font-size remify(16px)
+    font-size remify(17px)
     line-height 26px
 
   .movilidad-second-section-text-container
@@ -238,7 +231,7 @@
 
 @media screen and (min-width 877px) and (max-width 974px)
   .public-transport-card-container
-    max-width 640px
+    max-width 552px
 
   .movilidad-third-section-bottom-bg
     height 650px
